@@ -14,6 +14,14 @@ var year = new Date().getFullYear()+parseInt(years);
 
     };
 }
+// check for validate amount
+function validate() {
+    var principal = document.getElementById("principal").value;
+    var negativeValue = parseInt(principal) < 0;
+    if (!negativeValue) {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    }
 //move the slider value
 function updateRate()
 {
