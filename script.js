@@ -9,8 +9,10 @@ var year = new Date().getFullYear()+parseInt(years);
     document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
 //get for null value in Amount borrowed
     if (principal < 1) {
-    alert("Please enter the amount borrowed")};
-document.getElementById("result").style.backgroundColor = "yellow";
+    alert("Please enter the amount borrowed");
+        document.getElementById("principal").focus();
+
+    };
 }
 //move the slider value
 function updateRate()
